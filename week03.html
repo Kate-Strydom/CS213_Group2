@@ -9,7 +9,14 @@
 	   body { font-size:16px; }
 	</style>
     <style> /* #2 */
-	   body { font-size:12px; }
+      i.sheet3 {letter-spacing: 2px; font-weight: 900;}
+	   	body { font-size: 24px; background-color:lavenderblush }
+      div#menuBar { border-style: groove; border-color: darkblue;}
+      ul.sheet3 {font-size: 20; color: crimson;}
+      div#sheet1 {display: none;}
+      div#sheet2 {display: none;}
+      div#sheet4 {display: none;}
+      div#sheet5 {display: none;}
 	</style>
     <style> /* #3 */    
        body { font-size:20px;}
@@ -63,7 +70,16 @@
              </div>
              <div id="sheet3">
               <h3>Stylesheet 3</h3>
-              <p> <i>insert name and contribution</i></p>
+              <p> <i class="sheet3">Paul Humphreys</i> I made the following changes/contributions:</p>
+              <ul class="sheet3">
+                <li>Changed the body background color to lavenderblush;</li>
+                <li>Changed the body font size to 24px;</li>
+                <li>Added a blue border to the menubar;</li>
+                <li>Changed the Color of the text in this List to crimson;</li>
+                <li>Made it so this was the only Style Sheet Description Displayed;</li>
+                <li>Changed the spacing on my name to 2px</li>
+                <li>Changed the font weight on my name to 900</li>
+              </ul>
              </div>
              <div id="sheet4">
               <h3>Stylesheet 4</h3>
@@ -103,7 +119,7 @@
 		function applyStyle(i)
 		{
 			disableStyles();
-			document.styleSheets[i].disabled = false;
+      document.styleSheets[i].disabled = false;
 		}
 	  </script>
    </body>
